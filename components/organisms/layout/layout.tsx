@@ -7,7 +7,7 @@ interface LayoutProps {
   children: ReactElement
 }
 
-const Layout = ({ children }: LayoutProps) => {
+export default function Layout({ children }: LayoutProps) {
   return (
     <div className='h-screen'>
       <Header />
@@ -18,5 +18,3 @@ const Layout = ({ children }: LayoutProps) => {
     </div>
   )
 }
-
-export default Layout
