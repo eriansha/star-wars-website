@@ -47,8 +47,8 @@ module.exports = {
           ['^@?\\w', '^\\u0000'],
           // {s}css files
           ['^.+\\.s?css$'],
-          // Lib
-          ['^@/lib'],
+          // Lib & Services
+          ['^@/lib', '^@/services'],
           // components
           ['^@/atoms', '^@/molecules', '^@/organisms'],
           // Other imports
