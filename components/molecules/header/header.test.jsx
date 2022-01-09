@@ -23,6 +23,6 @@ describe('Footer', () => {
 
   it('matches snapshot', () => {
     const tree = render(<Header />)
-    expect(tree.container).toMatchSnapshot();
+    expect(tree.container).toMatchSnapshot()
   })
 })

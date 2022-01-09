@@ -7,7 +7,10 @@ export default function Footer() {
   return (
     <footer className='bg-black h-48 mt-4 pb-2 w-full'>
       <main className='border-t flex flex-col h-full items-center layout pt-6'>
-        <p data-testid='links' className='flex flex-wrap gap-x-8 gap-y-4 justify-center'>
+        <p
+          data-testid='links'
+          className='flex flex-wrap gap-x-8 gap-y-4 justify-center'
+        >
           {LINKS.map((link, key) => (
             <Link key={key} href={link.href}>
               {link.label}
@@ -26,7 +29,10 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p data-testid='author' className='mt-8 text-gray-600 text-sm dark:text-gray-300'>
+        <p
+          data-testid='author'
+          className='mt-8 text-gray-600 text-sm dark:text-gray-300'
+        >
           {'© Muhamad Ivan Putra Eriansya 2022'}
         </p>
       </main>

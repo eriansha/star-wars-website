@@ -14,7 +14,7 @@ describe('Footer', () => {
   it('renders author', () => {
     const { getByTestId } = render(<Footer />)
     const node = getByTestId('author')
-    expect(node).toHaveTextContent('© Muhamad Ivan Putra Eriansya 2022');
+    expect(node).toHaveTextContent('© Muhamad Ivan Putra Eriansya 2022')
   })
 
   // TODO: fix this unit test
@@ -47,6 +47,6 @@ describe('Footer', () => {
 
   it('matches snapshot', () => {
     const tree = render(<Footer />)
-    expect(tree.container).toMatchSnapshot();
+    expect(tree.container).toMatchSnapshot()
   })
 })
