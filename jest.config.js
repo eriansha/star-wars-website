@@ -16,11 +16,10 @@ module.exports = {
 
     // Handle image imports
     // https://jestjs.io/docs/webpack#handling-static-assets
-    '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$':
-      '<rootDir>/__mocks__/fileMock.js',
+    '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$': '<rootDir>/__mocks__/fileMock.js'
 
     // Handle module aliases
-    '^@/components/(.*)$': '<rootDir>/components/$1'
+    // '^@/components/(.*)$': '<rootDir>/components/$1'
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   snapshotResolver: './snapshotResolver.js',
