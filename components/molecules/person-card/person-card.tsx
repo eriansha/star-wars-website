@@ -8,7 +8,7 @@ interface PersonCardProps {
   name: Person['name']
 }
 
-const PersonCard = ({ personId, name }: PersonCardProps) => {
+export default function PersonCard({ personId, name }: PersonCardProps) {
   return (
     <div className='bg-white my-3 shadow-xl'>
       <Image
@@ -26,5 +26,3 @@ const PersonCard = ({ personId, name }: PersonCardProps) => {
     </div>
   )
 }
-
-export default PersonCard

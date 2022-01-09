@@ -6,13 +6,13 @@ type FilmProfileProps = Film
 
 import { mapImagePoster } from '@/services/film-service'
 
-const FilmProfile = ({
+export default function FilmProfile({
   title,
   openingCrawl,
   episodeID,
   director,
   producers
-}: FilmProfileProps) => {
+}: FilmProfileProps) {
   const posterImg = mapImagePoster(episodeID)
 
   return (
@@ -42,5 +42,3 @@ const FilmProfile = ({
     </section>
   )
 }
-
-export default FilmProfile
