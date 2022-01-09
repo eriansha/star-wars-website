@@ -20,7 +20,9 @@
       "@/molecules/*": ["components/molecules/*"],
       "@/organisms/*": ["components/organisms/*"],
       "@/types/*": ["types/*"],
+      "@/lib/*": ["lib/*"],
       "@/services/*": ["services/*"],
+      "@/queries/*": ["queries/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
