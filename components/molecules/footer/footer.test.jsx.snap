@@ -3,7 +3,7 @@
 exports[`Footer matches snapshot 1`] = `
 <div>
   <footer
-    class="bg-black h-48 mt-4 pb-2 w-full"
+    class="bg-black h-48 pb-2 w-full"
   >
     <main
       class="border-t flex flex-col h-full items-center layout pt-6"
@@ -12,6 +12,11 @@ exports[`Footer matches snapshot 1`] = `
         class="flex flex-wrap gap-x-8 gap-y-4 justify-center"
         data-testid="links"
       >
+        <a
+          href="/films"
+        >
+          Movie
+        </a>
         <a
           href="/people"
         >
