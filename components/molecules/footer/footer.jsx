@@ -5,7 +5,7 @@ import { LINKS, SOCIAL_MEDIAS } from './constant'
 
 export default function Footer() {
   return (
-    <footer className='bg-black h-48 mt-4 pb-2 w-full'>
+    <footer className='bg-black h-48 pb-2 w-full'>
       <main className='border-t flex flex-col h-full items-center layout pt-6'>
         <p
           data-testid='links'
