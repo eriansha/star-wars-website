@@ -50,7 +50,7 @@ module.exports = {
           // Lib & Services
           ['^@/lib', '^@/services'],
           // components
-          ['^@/atoms', '^@/molecules', '^@/organisms'],
+          ['^@/atoms', '^@/molecules', '^@/organisms', '^@/templates'],
           // Other imports
           ['^@/'],
           // relative paths up until 3 level

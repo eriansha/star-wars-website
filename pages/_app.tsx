@@ -2,13 +2,13 @@ import type { AppProps } from 'next/app'
 
 import '../styles/globals.css'
 
-import Layout from '@/organisms/layout/layout'
+import BasicLayout from '@/templates/basic-layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
+    <BasicLayout>
       <Component {...pageProps} />
-    </Layout>
+    </BasicLayout>
   )
 }
 
