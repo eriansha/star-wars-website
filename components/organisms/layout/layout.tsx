@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
-import Footer from '@/molecules/footer'
-import Header from '@/molecules/header'
+import Footer from '@/organisms/footer'
+import Header from '@/organisms/header'
 
 interface LayoutProps {
   children: ReactElement
