@@ -5,8 +5,8 @@ import { LINKS, SOCIAL_MEDIAS } from './constant'
 
 export default function Footer() {
   return (
-    <footer className='bg-black h-48 pb-2 w-full'>
-      <main className='border-t flex flex-col h-full items-center layout pt-6'>
+    <footer className='bg-black pb-5 w-full'>
+      <main className='border-t flex flex-col items-center layout pt-6'>
         <p
           data-testid='links'
           className='flex flex-wrap gap-x-8 gap-y-4 justify-center'

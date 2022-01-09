@@ -16,27 +16,27 @@ export default function FilmProfile({
   const posterImg = mapImagePoster(episodeID)
 
   return (
-    <section className='flex gap-x-12 pb-2'>
-      <div className='h-2/12 w-5/12'>
+    <section className='flex flex-col md:flex-row md:gap-x-10'>
+      <div className='flex justify-center pb-5'>
         <Image
           className='rounded-lg'
           src={posterImg}
-          layout='responsive'
+          layout='fixed'
           width={200}
-          height={270}
+          height={350}
           quality={100}
           alt='film-poster'
         />
       </div>
 
       <div>
-        <h1 className='mb-2 text-5xl'>{title}</h1>
+        <h1 className='font-bold mb-2 text-2xl md:text-5xl'>{`Star Wars: ${title}`}</h1>
         <div className='my-3'>
           <h3>{`Director: ${director}`}</h3>
           <h3>{`Producers: ${producers}`}</h3>
         </div>
 
-        <h2 className='mb-2 text-3xl'>Synopsis</h2>
+        <h2 className='mb-2 text-2xl md:text-3xl'>Synopsis</h2>
         <p>{openingCrawl}</p>
       </div>
     </section>

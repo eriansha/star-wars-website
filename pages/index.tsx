@@ -16,13 +16,15 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({ films }: HomeProps) => {
   return (
     <main>
-      <Image
-        layout='responsive'
-        width={1440}
-        height={450}
-        src='/img/banner.jpeg'
-        alt='banner'
-      />
+      <div className='hidden md:block'>
+        <Image
+          layout='responsive'
+          width={1440}
+          height={450}
+          src='/img/banner.jpeg'
+          alt='banner'
+        />
+      </div>
 
       <FilmPosterSection films={films} />
     </main>

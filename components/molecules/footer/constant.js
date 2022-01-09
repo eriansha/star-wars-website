@@ -2,6 +2,10 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export const LINKS = [
   {
+    label: 'Movie',
+    href: '/film'
+  },
+  {
     label: 'People',
     href: '/people'
   },

@@ -9,12 +9,15 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className='h-screen'>
+    <div className='min-h-screen relative'>
       <Header />
 
-      {children}
+      {/* content */}
+      <div className='flex-1'>
+        {children}
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   )
 }
