@@ -16,12 +16,13 @@ module.exports = {
 
     // Handle image imports
     // https://jestjs.io/docs/webpack#handling-static-assets
-    '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$': `<rootDir>/__mocks__/fileMock.js`,
+    '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$': '<rootDir>/__mocks__/fileMock.js',
 
     // Handle module aliases
     '^@/components/(.*)$': '<rootDir>/components/$1'
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  snapshotResolver: './snapshotResolver.js',
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   testEnvironment: 'jsdom',
   transform: {
@@ -32,6 +33,5 @@ module.exports = {
   transformIgnorePatterns: [
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$'
-  ],
-  testEnvironment: 'jest-environment-jsdom'
+  ]
 }

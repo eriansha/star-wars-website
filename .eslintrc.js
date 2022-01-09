@@ -2,7 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
+    jest: true
   },
   plugins: ['@typescript-eslint', 'simple-import-sort', 'unused-imports'],
   extends: [
@@ -16,6 +17,8 @@ module.exports = {
     'object-curly-spacing': [2, 'always'],
     'no-unused-vars': 'off',
     'no-console': 'warn',
+    quotes: ['error', 'single'],
+    'comma-dangle': ['warn', 'never'],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     'react/display-name': 'off',
