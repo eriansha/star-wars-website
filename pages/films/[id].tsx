@@ -16,10 +16,11 @@ interface FilmDetailProps {
 
 const Home: NextPage<FilmDetailProps> = ({ film }: FilmDetailProps) => {
   const {
-    characterConnection: { characters },
+    characterConnection,
     ...filmDetailProps
   } = film
 
+  const characters = characterConnection?.characters
   const { title, openingCrawl, episodeID, director, producers } =
     filmDetailProps
 
