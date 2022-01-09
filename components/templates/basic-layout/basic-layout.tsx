@@ -7,7 +7,7 @@ interface LayoutProps {
   children: ReactElement
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function BasicLayout({ children }: LayoutProps) {
   return (
     <div className='min-h-screen relative'>
       <Header />
