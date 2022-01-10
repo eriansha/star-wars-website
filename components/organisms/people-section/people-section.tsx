@@ -9,7 +9,9 @@ interface PeopleSection {
 export default function PeopleSection({ people }: PeopleSection) {
   return (
     <section className='bg-gray-dark py-5'>
-      <h3 className='text-2xl md:text-3xl'>People</h3>
+      <h3 data-testid='title' className='text-2xl md:text-3xl'>
+        People
+      </h3>
       <div className='flex flex-wrap gap-x-4 items-center justify-center md:justify-start'>
         {people &&
           people.map((person, key) => (
