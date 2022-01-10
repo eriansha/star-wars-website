@@ -1,5 +1,4 @@
 import { cleanup, render } from '@testing-library/react'
-import ReactDOM from 'react-dom'
 
 import Footer from './footer'
 
@@ -7,8 +6,7 @@ afterEach(cleanup)
 
 describe('Footer', () => {
   it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Footer />, div)
+    render(<Footer />)
   })
 
   it('renders author', () => {

@@ -1,5 +1,4 @@
 import { cleanup, render } from '@testing-library/react'
-import ReactDOM from 'react-dom'
 
 import Header from './header'
 
@@ -7,8 +6,7 @@ afterEach(cleanup)
 
 describe('Footer', () => {
   it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Header />, div)
+    render(<Header />)
   })
 
   // TODO: fix unit test
