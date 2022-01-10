@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <>
       {/* navbar */}
-      <div className='border-b-2 sticky top-0 z-10 bg-gray-dark border-gray flex justify-start'>
+      <header className='bg-gray-dark border-b-2 border-gray flex justify-start sticky top-0 z-10'>
         {/* logo */}
         <div className=''>
           <Link href='/'>
@@ -69,7 +69,7 @@ export default function Header() {
         >
           <FaBars className='h-5 w-5' />
         </button>
-      </div>
+      </header>
 
       {/* sidebar */}
       <div

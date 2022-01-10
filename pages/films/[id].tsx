@@ -1,10 +1,11 @@
-//import { gql } from '@apollo/client'
 import type { GetStaticPropsContext, NextPage } from 'next'
+import Head from 'next/head'
 
 import client from '@/lib/apollo-client'
 
 import FilmProfile from '@/organisms/film-profile'
 import PeopleSection from '@/organisms/people-section'
+import BasicLayout from '@/templates/basic-layout'
 
 import { GET_FILM_DETAIL, GET_FILM_IDS } from '@/queries/film-queries'
 
@@ -15,17 +16,17 @@ interface FilmDetailProps {
 }
 
 const Home: NextPage<FilmDetailProps> = ({ film }: FilmDetailProps) => {
-  const {
-    characterConnection,
-    ...filmDetailProps
-  } = film
+  const { characterConnection, ...filmDetailProps } = film
 
   const characters = characterConnection?.characters
   const { title, openingCrawl, episodeID, director, producers } =
     filmDetailProps
 
   return (
-    <main className='m-5'>
+    <BasicLayout className='m-5'>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <FilmProfile
         title={title}
         openingCrawl={openingCrawl}
@@ -35,7 +36,7 @@ const Home: NextPage<FilmDetailProps> = ({ film }: FilmDetailProps) => {
       />
 
       <PeopleSection people={characters} />
-    </main>
+    </BasicLayout>
   )
 }
 

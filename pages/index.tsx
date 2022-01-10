@@ -1,11 +1,13 @@
 import type { NextPage } from 'next'
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
 import { GET_FILMS } from 'queries/film-queries'
 
 import client from '@/lib/apollo-client'
 
 import FilmPosterSection from '@/organisms/film-poster-section'
+import BasicLayout from '@/templates/basic-layout'
 
 import { Film } from '@/types/film'
 
@@ -15,7 +17,10 @@ interface HomeProps {
 
 const Home: NextPage<HomeProps> = ({ films }: HomeProps) => {
   return (
-    <main>
+    <BasicLayout>
+      <Head>
+        <title>{'Star Wars Movie Page'}</title>
+      </Head>
       <div className='hidden md:block'>
         <Image
           layout='responsive'
@@ -27,7 +32,7 @@ const Home: NextPage<HomeProps> = ({ films }: HomeProps) => {
       </div>
 
       <FilmPosterSection films={films} />
-    </main>
+    </BasicLayout>
   )
 }
 
