@@ -5,7 +5,7 @@ import Footer from '@/organisms/footer'
 import Header from '@/organisms/header'
 
 interface LayoutProps {
-  className?: string,
+  className?: string
   children: ReactElement | ReactElement[]
 }
 
@@ -24,9 +24,7 @@ export default function BasicLayout({ className, children }: LayoutProps) {
 
       {/* content */}
       <div className='flex-1'>
-        <main className={className}>
-          {children}
-        </main>
+        <main className={className}>{children}</main>
 
         <Footer />
       </div>

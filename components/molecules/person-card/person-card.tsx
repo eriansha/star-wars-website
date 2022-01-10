@@ -20,7 +20,9 @@ export default function PersonCard({ personId, name }: PersonCardProps) {
       />
       <Link href={`/people/${personId}`}>
         <a data-testid='person-link'>
-          <h5 data-testid='person-name' className='text-black'>{name}</h5>
+          <h5 data-testid='person-name' className='text-black'>
+            {name}
+          </h5>
         </a>
       </Link>
     </div>

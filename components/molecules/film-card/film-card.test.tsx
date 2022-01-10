@@ -10,21 +10,24 @@ const props = {
 
 describe('Film Card', () => {
   it('renders without crashing', () => {
-    render(<FilmCard { ...props} />)
+    render(<FilmCard {...props} />)
   })
 
   it('render title props', () => {
-    const { getByTestId } = render(<FilmCard { ...props} />)
+    const { getByTestId } = render(<FilmCard {...props} />)
     expect(getByTestId('film-title')).toHaveTextContent(props.title)
   })
 
   it('contains href in anchor', () => {
-    const { getByTestId } = render(<FilmCard { ...props} />)
-    expect(getByTestId('detail-link')).toHaveAttribute('href', `/films/${props.filmId}`)
+    const { getByTestId } = render(<FilmCard {...props} />)
+    expect(getByTestId('detail-link')).toHaveAttribute(
+      'href',
+      `/films/${props.filmId}`
+    )
   })
 
   it('matches snapshot', () => {
-    const tree = render(<FilmCard { ...props} />)
+    const tree = render(<FilmCard {...props} />)
     expect(tree.container).toMatchSnapshot()
   })
 })

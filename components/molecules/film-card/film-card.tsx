@@ -26,7 +26,10 @@ export default function FilmCard({ filmId, title, episodeID }: FilmCardProps) {
             objectFit='cover'
             alt='film-poster'
           />
-          <h3 data-testid='film-title' className='absolute bottom-24 font-medium inset-x-0 invisible text-center underline group-hover:visible'>
+          <h3
+            data-testid='film-title'
+            className='absolute bottom-24 font-medium inset-x-0 invisible text-center underline group-hover:visible'
+          >
             {title}
           </h3>
         </a>

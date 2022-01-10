@@ -30,7 +30,10 @@ export default function FilmProfile({
       </div>
 
       <div>
-        <h1 data-testid='film-title' className='font-bold mb-2 text-2xl md:text-5xl'>{`Star Wars: ${title}`}</h1>
+        <h1
+          data-testid='film-title'
+          className='font-bold mb-2 text-2xl md:text-5xl'
+        >{`Star Wars: ${title}`}</h1>
         <div className='my-3'>
           <h3 data-testid='film-director'>{`Director: ${director}`}</h3>
           <h3 data-testid='film-producers'>{`Producers: ${producers}`}</h3>
