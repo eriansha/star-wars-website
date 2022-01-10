@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person Section matches snapshot 1`] = `
+<div>
+  <div
+    class="min-h-screen relative"
+  >
+    <div>
+      header
+    </div>
+    <div
+      class="flex-1"
+    >
+      <main>
+        <h1>
+          Rendering Layout
+        </h1>
+      </main>
+      <div>
+        footer
+      </div>
+    </div>
+  </div>
+</div>
+`;
