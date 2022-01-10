@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/18480194/148758406-35b249a4-375a-41b7-b474-2d2d2198be99.png" alt="Star Wars Logo" style='width:50%'/>
 </p>
 
-A Star Wars movie website integratted with [SWAPI-GraphQL](https://github.com/graphql/swapi-graphql).
+A Star Wars movie website integrated with [SWAPI-GraphQL](https://github.com/graphql/swapi-graphql).
 
 This repository is builed with
 - ⚡️ Next.js 12
