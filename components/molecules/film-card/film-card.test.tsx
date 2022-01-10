@@ -8,7 +8,7 @@ const props = {
   episodeID: 1
 }
 
-describe('Footer', () => {
+describe('Film Card', () => {
   it('renders without crashing', () => {
     render(<FilmCard { ...props} />)
   })

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer matches snapshot 1`] = `
+exports[`Film Card matches snapshot 1`] = `
 <div>
   <div
     class="group"
