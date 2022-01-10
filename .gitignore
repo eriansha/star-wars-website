@@ -6,5 +6,8 @@
 # next.js
 /.next/
 
+# env
+.env
+
 # misc
 .DS_Store
