@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Film Poster Section matches snapshot 1`] = `
+<div>
+  <section
+    class="bg-gray-dark pb-24 pt-10 md:pt-24"
+  >
+    <div
+      class="flex flex-col items-center"
+    >
+      <h1
+        class="font-bold pb-16 text-5xl"
+        data-testid="title"
+      >
+        Movie
+      </h1>
+      <div
+        class="flex flex-wrap gap-10 items-center justify-evenly mx-8"
+      >
+        <div>
+          film card
+        </div>
+        <div>
+          film card
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
