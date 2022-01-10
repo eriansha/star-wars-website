@@ -4,6 +4,7 @@ exports[`Footer matches snapshot 1`] = `
 <div>
   <header
     class="bg-gray-dark border-b-2 border-gray flex justify-start sticky top-0 z-10"
+    data-testid="main-header"
   >
     <div
       class=""
@@ -72,6 +73,7 @@ exports[`Footer matches snapshot 1`] = `
     </div>
     <button
       class="ml-auto p-4 md:hidden focus:bg-gray-700 focus:outline-none"
+      data-testid="sidebar-btn"
     >
       <svg
         class="h-5 w-5"
@@ -91,6 +93,7 @@ exports[`Footer matches snapshot 1`] = `
   </header>
   <div
     class="absolute bg-gray-dark duration-200 ease-in-out inset-y-0 left-0 px-2 space-y-6 text-blue-100 transform transition w-64 z-20 md:hidden md:relative md:translate-x-0 -translate-x-full"
+    data-testid="sidebar"
   >
     <a
       class="flex items-center px-2 space-x-2"

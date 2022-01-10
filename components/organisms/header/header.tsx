@@ -28,15 +28,19 @@ export const LINKS = [
 ]
 
 export default function Header() {
-  const [isSidebarOpen, setIsSideBarOpen] = useState(true)
+  // close the sidebar when it's true
+  const [isSidebarClose, setIsSideBarClose] = useState(true)
 
   const toggleSideBar = () =>
-    setIsSideBarOpen((prevState: boolean) => !prevState)
+    setIsSideBarClose((prevState: boolean) => !prevState)
 
   return (
     <>
       {/* navbar */}
-      <header className='bg-gray-dark border-b-2 border-gray flex justify-start sticky top-0 z-10'>
+      <header
+        data-testid='main-header'
+        className='bg-gray-dark border-b-2 border-gray flex justify-start sticky top-0 z-10'
+      >
         {/* logo */}
         <div className=''>
           <Link href='/'>
@@ -64,6 +68,7 @@ export default function Header() {
 
         {/* mobile menu button */}
         <button
+          data-testid='sidebar-btn'
           onClick={toggleSideBar}
           className='ml-auto p-4 md:hidden focus:bg-gray-700 focus:outline-none'
         >
@@ -73,10 +78,11 @@ export default function Header() {
 
       {/* sidebar */}
       <div
+        data-testid='sidebar'
         className={clsxm(
           'absolute bg-gray-dark duration-200 ease-in-out inset-y-0 left-0 px-2 space-y-6',
           'text-blue-100 transform transition w-64 z-20 md:hidden md:relative md:translate-x-0',
-          isSidebarOpen && '-translate-x-full'
+          isSidebarClose && '-translate-x-full'
         )}
       >
         {/* logo */}
