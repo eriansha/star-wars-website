@@ -5,6 +5,7 @@
 A Star Wars movie website integrated with [SWAPI-GraphQL](https://github.com/graphql/swapi-graphql).
 
 This repository is builed with
+
 - ⚡️ Next.js 12
 - ⚛️ React 17
 - ✨ TypeScript
@@ -16,6 +17,7 @@ This repository is builed with
 - 💖 Prettier — Format your code consistentl
 
 ## Demo
+
 You can see the demo [here](https://star-wars-website-eight.vercel.app/)
 
 ## Getting Started
@@ -29,7 +31,9 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Test
+
 run the jest test runnner
+
 ```bash
 npm run test
 # or
