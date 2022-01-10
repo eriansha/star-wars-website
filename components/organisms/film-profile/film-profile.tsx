@@ -22,7 +22,7 @@ export default function FilmProfile({
           className='rounded-lg'
           src={posterImg}
           layout='fixed'
-          width={200}
+          width={250}
           height={350}
           quality={100}
           alt='film-poster'
