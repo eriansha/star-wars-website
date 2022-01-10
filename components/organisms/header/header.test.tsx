@@ -10,20 +10,20 @@ describe('Footer', () => {
     render(<Header />)
   })
 
-  it('has \'sticky\' and \'top-0\' in header tag', () => {
+  it('has sticky and top-0 in header tag', () => {
     const { getByTestId } = render(<Header />)
     expect(getByTestId('main-header').classList.contains('sticky')).toBe(true)
     expect(getByTestId('main-header').classList.contains('top-0')).toBe(true)
   })
 
-  it('does not have \'-translate-x-full\' in sidebar classname when initialize header', () => {
+  it('does not have -translate-x-full in sidebar classname when initialize header', () => {
     const { getByTestId } = render(<Header />)
     expect(getByTestId('sidebar').classList.contains('-translate-x-full')).toBe(
       true
     )
   })
 
-  it('has \'-translate-x-full\' in sidebar classname when user click sidebar button', () => {
+  it("has '-translate-x-full' in sidebar classname when user click sidebar button", () => {
     const { getByTestId } = render(<Header />)
     const sidebar = getByTestId('sidebar')
 
