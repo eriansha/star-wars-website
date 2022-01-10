@@ -17,9 +17,9 @@ const props: Film[] = [
   }
 ]
 
-const mockPersonCard = jest.fn()
+const mockFilmCard = jest.fn()
 jest.mock('@/molecules/film-card', () => () => {
-  mockPersonCard(props)
+  mockFilmCard(props)
   return <div>film card</div>
 })
 
@@ -40,13 +40,13 @@ describe('Film Poster Section', () => {
 
   it('render film card as many as props', () => {
     render(<FilmPosterSection films={props} />)
-    expect(mockPersonCard).toHaveBeenCalledTimes(2)
-    expect(mockPersonCard).toHaveBeenCalledWith(props)
+    expect(mockFilmCard).toHaveBeenCalledTimes(2)
+    expect(mockFilmCard).toHaveBeenCalledWith(props)
   })
 
   it('do not render film card when film props in empty or undefined', () => {
     render(<FilmPosterSection films={[]} />)
-    expect(mockPersonCard).not.toHaveBeenCalled()
+    expect(mockFilmCard).not.toHaveBeenCalled()
   })
 
   it('matches snapshot', () => {

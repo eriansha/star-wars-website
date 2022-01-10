@@ -11,7 +11,7 @@ const props = {
   producers: ['Obi Wan Kenobi']
 }
 
-describe('Person Card', () => {
+describe('Film Profile', () => {
   it('renders without crashing', () => {
     render(<FilmProfile {...props} />)
   })
