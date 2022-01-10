@@ -15,7 +15,7 @@ export default function FilmCard({ filmId, title, episodeID }: FilmCardProps) {
   return (
     <div className='group'>
       <Link href={`/films/${filmId}`}>
-        <a className='relative'>
+        <a data-testid='detail-link' className='relative'>
           <Image
             className='duration-500 rounded-lg transition-all group-hover:brightness-50'
             src={posterImg}
@@ -26,7 +26,7 @@ export default function FilmCard({ filmId, title, episodeID }: FilmCardProps) {
             objectFit='cover'
             alt='film-poster'
           />
-          <h3 className='absolute bottom-24 font-medium inset-x-0 invisible text-center underline group-hover:visible'>
+          <h3 data-testid='film-title' className='absolute bottom-24 font-medium inset-x-0 invisible text-center underline group-hover:visible'>
             {title}
           </h3>
         </a>
